@@ -29,7 +29,7 @@ export function MainNav() {
         <>
             {/* Desktop Navigation */}
             <div className="hidden md:flex">
-                <nav className="flex items-center space-x-1 bg-white rounded-lg p-1 border border-gray-100">
+                <nav className="flex items-center space-x-1 bg-white rounded-lg p-1 border border-gray-100" suppressHydrationWarning>
                     {routes.map((route) => {
                         const isActive = pathname === route.path
                         return (
